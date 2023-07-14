@@ -1,0 +1,131 @@
+/*
+   primary color:    #845EC2
+   secondary color:  #B39CD0
+   third color:      #FBEAFF
+*/
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #845EC2;
+    --secondary-color: #B39CD0;
+    --third-color: #FBEAFF;
+}
+
+article {
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 0;
+    margin:0 0 20px;
+}
+
+h3 {
+    display: inline-block;
+    padding: 0 3px;
+    border-bottom: 2px var(--secondary-color) solid;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.35em;
+}
+
+li {
+    font-size: 1.05em;
+    line-height: 1.35em;
+}
+
+.description {
+    font-size: 0.8em;
+    line-height: 1.35em;
+}
+
+header {
+    padding: 10px;
+    /* background-color: var(--third-color); */
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color), var(--third-color));
+    border-bottom: 2px #5fb5d6 dotted;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    flex-grow: 1;
+    height: 40px;
+}
+
+nav a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(53, 40, 68);
+    letter-spacing: 0.3em;
+    padding-block: 10px 7px;
+}
+
+nav a:hover,
+nav a:focus
+ {
+    color: rgba(70, 36, 92, 0.486);
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+
+.content {
+    padding-top: 30px;
+    background-color: var(--third-color);
+    min-height: calc(100vh - 237px);
+}
+
+code {
+    display: block;
+    background-color: rgb(51, 77, 77);
+    color: rgb(255, 179, 0);
+    margin-left: 1px;
+    margin-right: 1px;
+    word-wrap:break-word;
+}
+
+@media screen and (min-width :576px) {
+    header .wrapper {
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .content .wrapper {
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+        border: 5px var(--secondary-color) solid;
+        padding: 20px;
+    }
+
+    p {
+        margin-left: 5px;
+    }
+}
